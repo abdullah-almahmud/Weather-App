@@ -22,8 +22,12 @@
   border-radius: 0 !important;
 }
 
-html,
+html{
+  overflow-x: hidden;
+}
 body {
+  width: 100%;
+  overflow-x: hidden;
   background: var(--bg);
   color: var(--fg);
   font-family: 'Space Grotesk', sans-serif;
@@ -62,6 +66,7 @@ body {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
   text-transform: uppercase;
+  max-width: 100%;
 }
 
 .logo {
