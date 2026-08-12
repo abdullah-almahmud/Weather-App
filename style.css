@@ -33,9 +33,9 @@ body {
 }
 
 .app {
-  width: 100%;
+  width: calc(100% - 20px);
   max-width: 1000px;
-  margin: 20px;
+  margin: 10px auto;
   border: 1px solid var(--border);
 }
 
