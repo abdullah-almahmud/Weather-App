@@ -316,64 +316,13 @@ body {
 }
 
 @media (max-width: 700px) {
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    min-height: 320px;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .forecast {
-    grid-template-columns: repeat(7, 100px);
-    overflow-x: auto;
-  }
-
-  .search-bar {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-
-@media (max-width: 700px) {
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    min-height: auto;
-    padding: 24px;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .city-name {
-    font-size: 28px;
-  }
-  
-  .temp-value {
-    font-size: 110px;
-  }
-  
-  .temp-unit {
-    font-size: 40px;
-  }
-
-  .search-bar {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .forecast {
-    grid-template-columns: repeat(7, 100px);
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; 
-  }
-
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
+  .app { margin: 10px; }
+  .main-grid { grid-template-columns: 1fr; }
+  .hero { min-height: auto; padding: 24px; border-right: none; border-bottom: 1px solid var(--border); }
+  .city-name { font-size: 28px; }
+  .temp-value { font-size: 110px; }
+  .temp-unit { font-size: 40px; }
+  .search-bar { flex-direction: column; align-items: stretch; }
+  .forecast { grid-template-columns: repeat(7, 100px); overflow-x: auto; }
+  .footer { flex-direction: column; text-align: center; gap: 6px; }
 }
