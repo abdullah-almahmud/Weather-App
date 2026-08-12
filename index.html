@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    
+    <header class="header">
+      <div class="logo">WEATHER<span>APP</span></div>
+      <button class="btn" id="themeToggle">LIGHT</button>
+    </header>
+
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="SEARCH CITY NAME...">
+      <button class="btn" id="searchBtn">SEARCH</button>
+    </div>
+
+    <main class="main-grid">
+      <section class="hero">
+        <div>
+          <div class="city-name" id="cityName">LOADING...</div>
+          <div class="condition" id="condition">PLEASE WAIT</div>
+        </div>
+        <div>
+          <div class="temp-display">
+            <span class="temp-value" id="tempValue">--</span>
+            <span class="temp-unit" id="tempUnit">°C</span>
+          </div>
+          <div class="unit-toggle">
+            <button class="unit-btn active" data-unit="C">°C</button>
+            <button class="unit-btn" data-unit="F">°F</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="info-block">
+          <div class="label">FEELS LIKE</div>
+          <div class="value" id="feelsLike">--</div>
+        </div>
+        <div class="info-block">
+          <div class="label">HUMIDITY</div>
+          <div class="value" id="humidity">--</div>
+        </div>
+        <div class="info-block">
+          <div class="label">SUNRISE / SUNSET</div>
+          <div class="value" id="sunTimes">--</div>
+        </div>
+        <div class="info-block">
+          <div class="label">UV INDEX</div>
+          <div class="value" id="uvValue">--</div>
+          <div class="sub" id="uvCategory">--</div>
+        </div>
+      </aside>
+    </main>
+
+    <section class="forecast" id="forecast"></section>
+
+    <footer class="footer">
+      <span id="currentTime">--</span>
+      <span id="currentDate">--</span>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
